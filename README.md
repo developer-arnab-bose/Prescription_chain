@@ -1,47 +1,196 @@
-# 💊 Prescription Chain (Stellar Soroban)
+# 💊 Prescription Chain
 
-[![Smart Contract](https://img.shields.io/badge/Soroban-Smart_Contract-blue)](https://soroban.stellar.org/)
-[![Network](https://img.shields.io/badge/Network-Stellar_Testnet-lightgrey)](https://stellar.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+A decentralized healthcare application built on the Stellar network using Soroban smart contracts to securely manage medical prescriptions.
 
-## 📖 Project Description 
-**Prescription Chain** is a decentralized healthcare application (dApp) built on the Stellar network using Soroban smart contracts. It tackles the critical industry challenges of prescription fraud, double-filling, and fragmented medical histories by bringing pharmaceutical records securely on-chain. 
+-----
 
-![Transaction](contract/screenshot.png)
+\<img width="1347" height="625" alt="Project Screenshot" src="[https://via.placeholder.com/1347x625.png?text=Prescription+Chain+Screenshot](https://www.google.com/search?q=https://via.placeholder.com/1347x625.png%3Ftext%3DPrescription%2BChain%2BScreenshot)" /\>
 
-By leveraging Stellar's high-speed, low-cost ecosystem, Prescription Chain ensures that medical prescriptions are verifiable, transparent, and securely managed among healthcare providers, patients, and pharmacies—all without relying on a centralized database.
+## 🌍 Overview
 
-## ⚙️ How It Works 
-The Prescription Chain acts as an immutable, transparent ledger for medical prescriptions. The workflow operates in three distinct phases:
+Prescription Chain is a lightweight, on-chain platform that enables doctors to issue, patients to hold, and pharmacies to fulfill prescriptions without relying on fragmented, centralized healthcare databases.
 
-1. **Issuance (Doctor):** A licensed healthcare provider creates and cryptographically signs a prescription on-chain. This record is linked to a specific patient's public address and details the exact medication and dosage.
-2. **Verification (Patient/Pharmacy):** A patient visits a pharmacy. The pharmacist queries the blockchain to verify the prescription's authenticity, ensuring it was issued by a valid doctor and hasn't been tampered with.
-3. **Fulfillment (Pharmacy):** Once the medication is dispensed, the pharmacy authorizes a transaction that permanently marks the prescription as `fulfilled` on the blockchain. This prevents the patient from taking the same prescription to another pharmacy.
+It brings the concept of secure medical records to the blockchain — ensuring transparency, preventing prescription fraud, and coordinating securely between healthcare participants.
 
-## ✨ Key Features 
-* **Role-Based Authentication:** Utilizes Soroban's native `require_auth()` to ensure strict access control. Only authorized doctors can issue prescriptions, and only verified pharmacies can fulfill them.
-* **Double-Fill Prevention:** Once a prescription's status transitions to `is_fulfilled = true`, the contract permanently locks it from being fulfilled a second time.
-* **Immutable Patient Records:** Prescriptions are stored in Soroban's persistent state, providing a tamper-proof, auditable trail of a patient's medical history.
-* **Cost-Efficient:** Built on Stellar, meaning transaction fees for creating and updating prescriptions are fractions of a cent, making it scalable for real-world healthcare infrastructure.
+-----
 
-## 🚀 Deployed Smart Contract Link
-* **Network:** Stellar
-* **Contract ID:** `CBBH7TQTZITHOD3ODCCY55J4Q46OEOPZUU66UFGFJ4CW2LE52CJNOGIP`
+## ✨ Key Highlights
 
----
+  * ⚡ Fully on-chain prescription management
+  * 🔐 Secure authorization via Stellar accounts
+  * 🧱 Built using Soroban smart contracts (Rust)
+  * 🛑 Double-fill prevention mechanism
+  * 🌐 Ready for healthcare dApp integration
 
-## 🛠️ Tech Stack
-* **Language:** [Rust](https://www.rust-lang.org/)
-* **Framework:** [Soroban SDK](https://soroban.stellar.org/docs) `no_std` environment
-* **Network:** [Stellar Blockchain](https://stellar.org/)
+-----
 
----
+## 🧠 How It Works
 
-## 💻 Getting Started (For Developers)
+1.  **Issue Prescription**
+    A licensed Doctor creates and signs a prescription on-chain with medication details.
 
-### Prerequisites
-To build and test this smart contract locally, you will need:
-1. **Rust:** Install via [rustup](https://rustup.rs/)
-2. **Target:** Add the WebAssembly target:
-   ```bash
-   rustup target add wasm32-unknown-unknown
+2.  **Verify Prescription**
+    A Pharmacist queries the blockchain to verify the prescription's authenticity and ensure it hasn't been altered.
+
+3.  **Fulfill Prescription**
+    The Pharmacy marks the prescription as completed once the medication is dispensed.
+
+4.  **Track On-Chain**
+    All fulfillment data is stored transparently and permanently on the blockchain.
+
+-----
+
+## 🛠️ Features
+
+### Core Functionality
+
+  * 📝 Create prescriptions with unique IDs
+  * 🩺 Assign specific medications and dosages
+  * ✅ Mark prescriptions as fulfilled
+  * 🔍 Retrieve prescription details anytime
+  * 🔐 Enforced authentication (`require_auth`)
+
+-----
+
+### 🧱 Smart Contract Design
+
+#### `Prescription` Structure
+
+| Field          | Type    | Description             |
+| -------------- | ------- | ----------------------- |
+| `doctor`       | Address | Prescribing doctor      |
+| `patient`      | Address | Receiving patient       |
+| `medication`   | String  | Name of the drug        |
+| `dosage`       | String  | Dosage instructions     |
+| `is_fulfilled` | bool    | Fulfillment status      |
+
+-----
+
+### ⚙️ Contract Functions
+
+| Function     | Description                        |
+| ------------ | ---------------------------------- |
+| `create_rx`  | Create a new prescription          |
+| `fulfill_rx` | Mark prescription as dispensed     |
+| `get_rx`     | Retrieve prescription details      |
+
+-----
+
+## 🌐 Deployed Contract
+
+🔗 **Contract Address:**
+`CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W`
+
+DEPLOYED LINK
+[https://stellar.expert/explorer/testnet/contract/CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W](https://www.google.com/search?q=https://stellar.expert/explorer/testnet/contract/CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W)
+
+👉 You can interact with it using the Soroban CLI or Stellar tools.
+
+-----
+
+## 🧪 Example Usage
+
+### Create a Prescription
+
+```bash id="mkd82n"
+soroban contract invoke \
+  --id CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W \
+  --fn create_rx \
+  --arg env=... \
+  --arg rx_id=101 \
+  --arg doctor=<DOCTOR_ADDRESS> \
+  --arg patient=<PATIENT_ADDRESS> \
+  --arg medication="Amoxicillin" \
+  --arg dosage="500mg twice daily"
+```
+
+-----
+
+### Fulfill a Prescription
+
+```bash id="8slx3k"
+soroban contract invoke \
+  --id CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W \
+  --fn fulfill_rx \
+  --arg rx_id=101 \
+  --arg pharmacy=<PHARMACY_ADDRESS>
+```
+
+-----
+
+### Get Prescription Details
+
+```bash id="a9v2c1"
+soroban contract invoke \
+  --id CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W \
+  --fn get_rx \
+  --arg rx_id=101
+```
+
+-----
+
+## 🧰 Tech Stack
+
+  * **Smart Contract:** Rust + Soroban SDK
+  * **Blockchain:** Stellar (Soroban)
+  * **Storage:** On-chain persistent storage
+
+-----
+
+## 🔐 Security Model
+
+  * ✅ Only authorized doctors can create prescriptions
+  * ✅ Only authorized pharmacies can fulfill prescriptions
+  * ✅ Prevents double-filling (locked once `is_fulfilled` is true)
+  * ✅ Immutable patient records
+
+-----
+
+## ⚠️ Current Limitations
+
+  * ❌ No privacy/encryption logic yet (requires ZK or off-chain encryption for HIPAA compliance)
+  * ❌ No frontend interface
+  * ❌ No global registry of verified Doctor/Pharmacy addresses
+  * ❌ No insurance/payment integration
+
+-----
+
+## 🔮 Future Roadmap
+
+  * 🔒 Encrypt patient data and medication details on-chain
+  * 🌐 Build React frontend for doctors and pharmacies
+  * ⭐ Global registry for verified healthcare providers
+  * 💳 Integrate USDC payments for medication costs
+  * 📣 Event logging for real-time pharmacy notifications
+
+-----
+
+## 🏗️ Getting Started (Dev)
+
+```bash id="k2pz8w"
+# Build contract
+soroban contract build
+
+# Deploy contract
+soroban contract deploy \
+  --wasm target/wasm32-unknown-unknown/release/contract.wasm
+```
+
+-----
+
+## 🤝 Contributing
+
+Pull requests are welcome\!
+Feel free to open issues for suggestions or improvements.
+
+-----
+
+## 📄 License
+
+MIT License
+
+-----
+
+## 💡 Vision
+
+To create a fully decentralized, fraud-free healthcare ecosystem where patients truly own their medical records and prescriptions are globally verifiable — without data silos or intermediaries.
