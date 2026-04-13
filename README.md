@@ -4,8 +4,7 @@ A decentralized healthcare application built on the Stellar network using Soroba
 
 -----
 
-
-\<img width="1347" height="625" alt="Project Screenshot" src="[https://raw.githubusercontent.com/developer-arnab-bose/Prescription_chain/refs/heads/main/contract/screenshot.png](https://raw.githubusercontent.com/developer-arnab-bose/Prescription_chain/refs/heads/main/contract/screenshot.png)" /\>
+![Image](https://raw.githubusercontent.com/developer-arnab-bose/Prescription_chain/refs/heads/main/contract/screenshot.png)
 
 ## 🌍 Overview
 
@@ -83,7 +82,7 @@ It brings the concept of secure medical records to the blockchain — ensuring t
 `CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W`
 
 DEPLOYED LINK
-[https://stellar.expert/explorer/testnet/contract/CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W](https://www.google.com/search?q=https://stellar.expert/explorer/testnet/contract/CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W)
+[https://stellar.expert/explorer/testnet/contract/CBBH7TQTZITHOD3ODCCY55J4Q46OEOPZUU66UFGFJ4CW2LE52CJNOGIP](https://www.google.com/search?q=https://stellar.expert/explorer/testnet/contract/CBBH7TQTZITHOD3ODCCY55J4Q46OEOPZUU66UFGFJ4CW2LE52CJNOGIP)
 
 👉 You can interact with it using the Soroban CLI or Stellar tools.
 
