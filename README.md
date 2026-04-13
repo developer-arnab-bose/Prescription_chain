@@ -79,7 +79,7 @@ It brings the concept of secure medical records to the blockchain — ensuring t
 ## 🌐 Deployed Contract
 
 🔗 **Contract Address:**
-`CAHTKZIENCHISUC72EFG3T3P4NENFIVQNEFJDWCJ7AZOO7SQTBGK5Y2W`
+`CBBH7TQTZITHOD3ODCCY55J4Q46OEOPZUU66UFGFJ4CW2LE52CJNOGIP`
 
 DEPLOYED LINK
 [https://stellar.expert/explorer/testnet/contract/CBBH7TQTZITHOD3ODCCY55J4Q46OEOPZUU66UFGFJ4CW2LE52CJNOGIP](https://www.google.com/search?q=https://stellar.expert/explorer/testnet/contract/CBBH7TQTZITHOD3ODCCY55J4Q46OEOPZUU66UFGFJ4CW2LE52CJNOGIP)
