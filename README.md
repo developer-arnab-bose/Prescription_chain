@@ -1,5 +1,7 @@
 # 💊 Prescription Chain (Stellar Soroban)
 
+![Transaction](contract/screenshot.png)
+
 [![Smart Contract](https://img.shields.io/badge/Soroban-Smart_Contract-blue)](https://soroban.stellar.org/)
 [![Network](https://img.shields.io/badge/Network-Stellar_Testnet-lightgrey)](https://stellar.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
