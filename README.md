@@ -4,7 +4,8 @@ A decentralized healthcare application built on the Stellar network using Soroba
 
 -----
 
-\<img width="1347" height="625" alt="Project Screenshot" src="[https://via.placeholder.com/1347x625.png?text=Prescription+Chain+Screenshot](https://www.google.com/search?q=https://via.placeholder.com/1347x625.png%3Ftext%3DPrescription%2BChain%2BScreenshot)" /\>
+
+\<img width="1347" height="625" alt="Project Screenshot" src="[https://raw.githubusercontent.com/developer-arnab-bose/Prescription_chain/refs/heads/main/contract/screenshot.png](https://raw.githubusercontent.com/developer-arnab-bose/Prescription_chain/refs/heads/main/contract/screenshot.png)" /\>
 
 ## 🌍 Overview
 
