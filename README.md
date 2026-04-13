@@ -1,13 +1,13 @@
 # 💊 Prescription Chain (Stellar Soroban)
 
-![Transaction](contract/screenshot.png)
-
 [![Smart Contract](https://img.shields.io/badge/Soroban-Smart_Contract-blue)](https://soroban.stellar.org/)
 [![Network](https://img.shields.io/badge/Network-Stellar_Testnet-lightgrey)](https://stellar.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📖 Project Description 
 **Prescription Chain** is a decentralized healthcare application (dApp) built on the Stellar network using Soroban smart contracts. It tackles the critical industry challenges of prescription fraud, double-filling, and fragmented medical histories by bringing pharmaceutical records securely on-chain. 
+
+![Transaction](contract/screenshot.png)
 
 By leveraging Stellar's high-speed, low-cost ecosystem, Prescription Chain ensures that medical prescriptions are verifiable, transparent, and securely managed among healthcare providers, patients, and pharmacies—all without relying on a centralized database.
 
